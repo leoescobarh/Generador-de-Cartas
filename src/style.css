@@ -1,1 +1,24 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+}
+
+.cartas {
+  width: 336px;
+  height: 410px;
+  background: white;
+  border-radius: 19px;
+  padding: 15px;
+  margin: auto;
+}
+
+.arriba {
+  font-size: 60px;
+}
+.abajo {
+  font-size: 60px;
+}
+
+.numero {
+  font-size: 100px;
+}
