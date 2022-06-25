@@ -11,6 +11,10 @@ window.onload = () => {
   document.querySelector("#abajin").innerHTML = guardar;
   document.querySelector(".arriba").innerHTML = guardar;
   document.querySelector(".numero").innerHTML = generarNumero();
+  if (guardar == "♦" || guardar == "♥") {
+    document.querySelector(".arriba").style.color = "red";
+    document.querySelector(".abajo").style.color = "red";
+  }
 };
 
 let generarNumero = () => {
@@ -36,7 +40,6 @@ let generarNumero = () => {
 let generarSimbolo = () => {
   let simbolos = ["♦", "♥", "♠", "♣"];
   let simbolotes = Math.floor(Math.random() * simbolos.length);
-  if (simbolotes == "♦" || simbolotes == "♥") {
-  }
+
   return simbolos[simbolotes];
 };
